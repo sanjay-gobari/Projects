@@ -1,0 +1,73 @@
+
+:root{
+  --colour-1 :rgb(232, 232, 232);
+  --colour-2 :rgb(232, 232, 232);
+  --colour-3 :rgba(0, 255, 0, 0.26);
+  --colour-4 :rgba(0, 255, 0, 0.26);
+  --shadow-1:0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-df-ac-full{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--colour-1);
+  align-items: start;
+
+}
+
+.container{
+  background-color: var(--colour-2);
+  max-width: 60rem;
+  border-radius: 2rem;
+  max-height:580px ;
+  box-shadow: var(--shadow-1);
+}
+
+.out-box{
+  box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.15), -6px -6px 6px 0 rgba(255, 255, 255, 0.6);
+}
+.lap-box{
+  border-radius: 0.2rem;
+}
+.control-box{
+  box-shadow: none;
+  box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.15), -6px -6px 6px 0 rgba(255, 255, 255, 0.6);
+}
+.clock-box{
+  font-size: 3rem;
+  display: flex;
+  gap: 10px;
+}
+.heading-h1{
+  font-size: 4rem;
+}
+
+.my-btn{
+  font-size: 20px;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(185, 185, 185);
+}
+.my-btn:hover{
+  cursor: pointer;
+
+}
+#lap-items{
+  overflow-x: hidden;
+
+
+}
+.lap-item{
+text-align: center;
+box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+width: 95%;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c9c9c9;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="my-g-style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-df-ac-full">
+    <div class=" container out-box df fd-c ai-c p3 m4">
+      <div class="heading-h1 p1">Stop Watch</div>
+      <div class="clock-box m2">
+        <div id="cHour">00</div><span>:</span>
+        <div id="cMinute">00</div><span>:</span>
+        <div id="cSecond">00</div><span>:</span>
+        <div id="cMSecond">00</div>
+      </div>
+      <div class="container df jc-c g-1 p2 w-100 control-box">
+        <button class="my-btn"id="start-btn">Start</button>
+        <button class="my-btn"id="stop-btn">Stop</button>
+        <button class="my-btn"id="reset-btn">Reset</button>
+        <button class="my-btn"id="lap-btn">Lap</button>
+      </div>
+      <div class="container lap-box df fd-c ai-c m2 p-2 w-100 " id="lap-items"></div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <div class="grid-cover">
+    <div class="game-box">
+      <div class="heading">TIC TAC TOE</div>
+      <div class="winner-msg"></div>
+        <div class="tic-tac-toe-board">
+          <div class="tic-tac-toe-cell"  onclick="makeMove(0, 0,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(0, 1,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(0, 2,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(1, 0,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(1, 1,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(1, 2,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(2, 0,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(2, 1,this)" ></div>
+          <div class="tic-tac-toe-cell"  onclick="makeMove(2, 2,this)" ></div>
+          <svg class="cline ">
+
+            <line class="my-line" x1="0%" y1="0%" x2="0%" y2="0%" />
+
+          </svg>
+        </div>
+        <div class="control-btn">
+          <div class="btn play-again-btn">Play Again</div>
+          <div class="btn reset-btn">Reset</div>
+          <div class="btn move-reset">Move Reset</div>
+        </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
