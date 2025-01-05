@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanElegance</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="main" class="bg-white ">
+    <nav id="nav" class="flex justify-between items-center py-4">
+      <div class="magnet">
+        <a href="#" class=" text-[clamp(1rem,2vw,2rem)]">UrbanElegance</a>
+      </div>
+      <ul class="flex gap-4 text-xl items-center">
+        <li>
+          <a href="#">our brand</a>
+        </li>
+        <li class="flex items-center gap-2">
+          <a href="#">menu</a>
+          <div class="w-[2rem] h-[2rem] magnet flex items-center justify-center">
+            <i class="ri-menu-line"></i>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="cover m-auto max-w-[1500px]">
+      <div id="home">
+        <div class="w-full pt-[200px]">
+          <div id="heading-text" class="text-[8rem] leading-[7rem] font-bold text-transparent only-stroke text-center">
+            <p class=" inline">Discover</p>
+            <p class=" inline">Your</p>
+            <p class=" inline">Style</p>
+          </div>
+          <p class="mt-80 text-2xl selection:bg-black selection:text-white max-w-[800px]">
+            Explore our latest collection and find the perfect pieces to express your unique style.
+          </p>
+        </div>
+      </div>
+      <section>
+        <div class="text-8xl pt-40 pb-100">
+          <p>Premium</p>
+          <p class="text-transparent only-stroke">Quality</p>
+        </div>
+        <div class="fbox h-[100vh] overflow-hidden flex ">
+          <div id="fboxtext" class=" overflow-hidden h-full left w-1/2">
+            <div class="ftextelm  h-[100vh] flex flex-col justify-center">
+              <p class="text-6xl">Fashon Forward</p>
+              <p class="text-2xl">Stay ahed in style with our trendy collection</p>
+              <p class="text-gray-500">Explore more</p>
+            </div>
+            <div class="ftextelm  h-[100vh] flex flex-col justify-center">
+              <p class="text-6xl">Trendy Designs</p>
+              <p class="text-2xl">Discover the latest trends in fashon</p>
+              <p class="text-gray-500">Explore more</p>
+            </div>
+            <div class="ftextelm flast h-[100vh] flex flex-col justify-center">
+              <p class="text-6xl"> Quality Materials</p>
+              <p class="text-2xl">High-quality materials for durability</p>
+              <p class="text-gray-500">Explore more</p>
+            </div>
+          </div>
+          <div class="h-[100vh] right w-1/2  flex justify-center items-center">
+            <div class="imagebox h-[60%] w-[400px]  overflow-hidden">
+              <img class=" fimageelm h-full w-full  object-cover object-center"
+                src="https://images.unsplash.com/photo-1586620476774-f7e982201403?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+              <img class=" fimageelm h-full w-full  object-cover object-center"
+                src="https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+              <img class=" fimageelm h-full w-full  object-cover object-center"
+                src="https://images.pexels.com/photos/1375736/pexels-photo-1375736.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </section>
+
+      <section>
+        <div class="py-20 space-y-10">
+          <div class="text-7xl">Discover the Power<br>of Our Products</div>
+          <p class="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, esse?
+          </p>
+        </div>
+        <div class="py-10 flex flex-col items-center md:flex-row  m-auto  justify-between  gap-4">
+          <div class=" w-[460px] flex flex-col gap-4">
+            <div class="card  w-full h-[300px] rounded-lg">
+              <img src="https://images.pexels.com/photos/7679438/pexels-photo-7679438.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img">
+            </div>
+            <p class="px-4 text-2xl">Explore Our Collection</p>
+            <button class="magnet btn-round-1 w-fit">Explore</button>
+          </div>
+          <div class=" w-[460px] flex flex-col gap-4">
+            <div class="card  w-full h-[300px] rounded-lg">
+              <img src="https://images.pexels.com/photos/5418888/pexels-photo-5418888.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img">
+            </div>
+            <p class="px-4 text-2xl">Select Your Favorites</p>
+            <button class="magnet btn-round-1 w-fit">Explore</button>
+          </div>
+          <div class=" w-[460px] flex flex-col gap-4">
+            <div class="card  w-full h-[300px] rounded-lg">
+              <img src="https://images.pexels.com/photos/291738/pexels-photo-291738.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img">
+            </div>
+            <p class="px-4 text-2xl">New Designs</p>
+            <button class="magnet btn-round-1 w-fit">Explore</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-20 space-y-10">
+          <div class="text-7xl">Discover Our<br>Latest Collection</div>
+        </div>
+        <div class="py-10 flex flex-col items-center md:flex-row  m-auto  justify-between  gap-4">
+          <div class=" w-[460px] flex flex-col gap-4">
+            <div class="card  w-full h-[300px] rounded-lg">
+              <img src="https://images.pexels.com/photos/18962298/pexels-photo-18962298/free-photo-of-orange-coat-with-belt.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <p class="font-bold">Designs</p>
+            <p class="text-2xl">New trendy designs</p>
+          </div>
+          <div class=" w-[460px] flex flex-col gap-4">
+            <div class="card  w-full h-[300px] rounded-lg">
+              <img src="https://images.pexels.com/photos/5326769/pexels-photo-5326769.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <p class="font-bold">Newest Arrivals</p>
+            <p class="text-2xl">New designs</p>
+          </div>
+          <div class=" w-[460px] flex flex-col gap-4">
+            <div class="card  w-full h-[300px] rounded-lg">
+              <img src="https://images.pexels.com/photos/4151807/pexels-photo-4151807.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <p class="font-bold">Perfect Style</p>
+            <p class="text-2xl">perfect pieces to elevate your style</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+  <footer class="pt-40 bg-white">
+    <div class="flex flex-col items-center gap-20 py-10">
+      <p class="text-gray-800 text-xl">Our customer service team is available Monday to Friday, 9am-5pm.</p>
+      <p class="text-7xl font-semibold">Contact Us</p>
+      <p class="text-2xl">We'd love to hear from you. Reach out to us for any inquiries or feedback.</p>
+      <div class="bg-black text-white flex items-center px-6 border border-gray-500 rounded-full min-w-full flex md:min-w-[800px] ">
+        <input type="text" class=" bg-transparent outline-none py-4 pl-3 text-xl flex-grow" placeholder="Message us">
+        <i class="ri-send-plane-fill text-3xl "></i>
+      </div>
+      <div class="py-10 flex flex-col md:flex-row gap-10 justify-center">
+        <div class="flex flex-col items-center max-w-[300px] gap-6">
+          <i class="ri-mail-fill text-6xl"></i>
+          <p class="text-3xl font-semibold">Email</p>
+          <p class="text-xl text-center">Follow us on social media for the latest updates.</p>
+          <p>info@yourclothsbrand.com</p>
+        </div>
+        <div class="flex flex-col items-center max-w-[300px] gap-6">
+          <i class="ri-mail-fill text-6xl"></i>
+          <p class="text-3xl font-semibold">Phone</p>
+          <p class="text-xl text-center">For wholesale inquiries, please contact <br> wholesale@yourclothsbrand.com</p>
+          <p>+91 8967451111</p>
+        </div>
+        <div class="flex flex-col items-center max-w-[300px] gap-6">
+          <i class="ri-mail-fill text-6xl"></i>
+          <p class="text-3xl font-semibold">Office</p>
+          <p class="text-xl text-center">Sign up for our newsletter to stay updated on new arrivals and special offers.
+          </p>
+          <div class="text-center">
+            <p>Sector 12 Main Street, </p>
+            <p>Delhi,INDIA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<p class="bg-black text-white text-center py-4"> Copyright &copy; 2024 | UrbanElegance | All rights reserved</p>
+</body>
+
+</html>

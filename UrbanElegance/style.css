@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  cursor: none;
+}
+
+#main {
+  margin-inline: auto;
+  max-width: calc(1920px - 200px);
+  padding-inline: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#heading-text p:hover {
+  -webkit-text-stroke: 1px transparent;
+  color: black;
+}
+
+.only-stroke {
+  -webkit-text-stroke: 1px black;
+}
+
+.imagebox {
+  position: relative;
+}
+
+.fimageelm {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-round-1 {
+  background-color: #dddddd;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+
+}
+
+.card {
+  width: 100%;
+  height: 40%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.1), -6px -6px 10px 0 rgba(230, 230, 230, 0.548);
+  overflow: hidden;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.magnet {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.1s linear;
+}
+
+.magnet:hover {
+  color: white;
+}
+
+.magnet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transition: all 0.3s ease;
+  z-index: -1;
+  border-radius: 2rem;
+}
+
+.magnet:hover::before {
+  transform: scale(1.2);
+  background: #000;
+}
