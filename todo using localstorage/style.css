@@ -1,0 +1,69 @@
+:root{
+  --theam-color1:rgb(68, 255, 68);
+  --theam-color2:rgb(101, 168, 255);
+  --edit-color1:rgb(0, 153, 255);
+  --delete-color1:rgb(255, 26, 26);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.hvr-p:hover{
+  border-color: var(--theam-color1);
+}
+.hvr-s:hover{
+  border-color: var(--theam-color2);
+}
+.hvrt-p:hover{
+  border-color: var(--theam-color1);
+  color:var(--theam-color1);
+}
+.button-1 {
+  border: 1px solid gray;
+  padding: 0.3em 0.6em;
+  border-radius: 0.4em;
+}
+
+.button-2 i{
+  line-height: 0;
+}
+.button-2 {
+  border: 1px solid gray;
+  display: grid;
+  place-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0.1em;
+}
+
+.button-delete:hover{
+  border-color: var(--delete-color1);
+  color: var(--delete-color1);
+}
+.button-edit:hover{
+  border-color: var(--edit-color1);
+  color: var(--edit-color1);
+}
+.checkbox-1 {
+  --size: calc(1 * 20px);
+  min-width: var(--size);
+  min-height: var(--size);
+}
+/* change scroll bar */
+::-webkit-scrollbar{
+  width: 6px;
+
+}
+::-webkit-scrollbar-track {
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #adadad;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #818181;
+}
