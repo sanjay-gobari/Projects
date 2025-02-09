@@ -32,6 +32,7 @@
   border-radius: 0.2rem;
 }
 .control-box{
+  border-radius: 1rem;
   box-shadow: none;
   box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.15), -6px -6px 6px 0 rgba(255, 255, 255, 0.6);
 }

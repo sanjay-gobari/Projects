@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+#main {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding-inline: 1em;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  padding-block: 1em;
+  font-size: 3rem;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  transition: width 0.5s ease;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: box-shadow 0.2s ease, border 0.2s ease;
+
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 0 rgb(44, 44, 44);
+  border: 1px solid rgb(51, 51, 51);
+}
+
+
+.card .image-wrapper {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background-color: rgb(221, 221, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.5s ease;
+  position: relative;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 110;
+  width: 100%;
+  height: 100%;
+  scale: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/eye.svg");
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.image-wrapper:hover::before, .image-wrapper:hover::after {
+  opacity: 1;
+}
+
+.card .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: scale 0.5s ease;
+}
+
+.card .image-wrapper:hover>img {
+  scale: 102%;
+}
+
+.card h3 {
+  padding-block: 0.5rem;
+  background-color: hsl(0, 0%, 13%);
+  text-align: center;
+  font-size: 2rem;
+  transition: font-size 0.5s ease;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    text-align: center;
+    padding-block: 0.8em;
+    font-size: 2rem;
+  }
+
+  #main {
+    padding-inline: 0.5em;
+    padding-bottom: 2em;
+  }
+
+  .card {
+    width: 260px;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #main {
+    flex-wrap: wrap;
+    padding-inline: 0.5;
+    gap: 0.5em;
+  }
+
+  .card {
+    width: 200px;
+    transition: width 0.2s ease;
+    ;
+    border-radius: 0.8rem;
+  }
+
+  .card .image-wrapper {
+    border-radius: 0.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+}

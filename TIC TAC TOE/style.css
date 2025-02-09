@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Style+Script&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Style+Script&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 * {
   margin: 0;
@@ -11,7 +14,7 @@
   display: grid;
   min-height: 100vh;
   place-content: center;
-  background-color: #F2D5F8;
+  background-color: #706BCF;
   /* Background color of cover*/
 }
 
@@ -22,7 +25,9 @@
   padding: 2rem;
   gap: 0.62rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0.4rem;
+  border-radius: 2rem;
+  background-color: #333448;
+  transition: scale 0.2s ease;
 }
 
 /* Styling for the game board */
@@ -33,26 +38,25 @@
   /* Adjust width as needed */
   grid-template-rows: repeat(3, 150px);
   /* Adjust height as needed */
-  gap: 5px;
+  gap: 0.5rem;
   /* Adjust gap between cells */
-  background-color: #F2D5F8;
+  background-color: #242424;
   /* Background color of the game board */
-
+  border-radius: 1rem;
+  padding: 0.5rem;
+  overflow: hidden;
 }
 
 /* Styling for individual grid cells */
 .tic-tac-toe-cell {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Poppins", serif;
   font-size: 4rem;
   border-radius: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: #E6C0E9;
-  /* Background color of each cell */
-  border: 2px solid #cccccc52;
-  /* Border color of each cell */
+  background-color: #2e2e41;
   cursor: pointer;
   /* Cursor style on hover */
   transform-style: preserve-3d;
@@ -83,18 +87,18 @@
 
 /* Hover effect on grid cells */
 .tic-tac-toe-cell:hover {
-  background-color: #BFABCB;
+  background-color: #26273a;
   /* Background color on hover */
 }
 
 /* heading style */
 .heading {
-  padding: 0.4em;
+  padding: 0.2emem;
   font-size: 3rem;
   width: 100%;
   text-align: center;
   border-radius: 0.2em;
-  background-color: #E6C0E9;
+  color: white;
 }
 
 /* play again button */
@@ -108,9 +112,11 @@
   border: 1px solid transparent;
 }
 
-.move-reset,.reset-btn,.play-again-btn {
-  background-color: #9064aa;
-  color:white;
+.move-reset,
+.reset-btn,
+.play-again-btn {
+  background-color: #706BCF;
+  color: white;
 }
 
 .move-reset:hover,
@@ -128,10 +134,17 @@
 }
 
 .winner-msg {
-  font-family: "Luckiest Guy", cursive;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #2b2222;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins", serif;
   color: rgb(17, 194, 17);
-  min-height: 4rem;
-  font-size: 2rem;
+  min-height: 3rem;
+  font-size: 4rem;
 }
 
 .diagonal-line {
@@ -175,4 +188,104 @@
   to {
     stroke-dashoffset: 0;
   }
+}
+
+
+
+
+/* players */
+.players-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: green; */
+  padding: 0.5rem;
+  color: white;
+}
+
+.player-box-1,
+.player-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem;
+  font-size: 1.2rem;
+  padding: 0.4em;
+  border-radius: 0.2em;
+}
+
+.player-highlight {
+  background-color: #3f4058;
+}
+.player-highlight  svg {
+  color: #63a7ff;
+}
+.player-timer {
+  width: 100%;
+  text-align: center;
+}
+
+.player-time{
+  font-family: "Electrolize", serif;
+  width: 80px;
+}
+
+.player-2-timer,.player-1-timer {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+  padding-block: 0.2em;
+}
+
+.player-2-timer svg,.player-1-timer svg {
+  width: 2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #727272;
+  border-radius: 0.2em;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-progress-fill-1 {
+  height: 100%;
+  background-color: white;
+  width: 50%;
+}
+
+.player-progress-fill-2 {
+  height: 100%;
+  background-color: white;
+  width: 10%;
+}
+
+.player-1-chr{
+  color: red;
+  font-size: 1.8rem;
+}
+.player-2-chr{
+  color: blue;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .game-box{
+    scale: 80%;
+  }
+  .tic-tac-toe-board {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .tic-tac-toe-cell {
+    font-size: 4rem;
+  }
+  .winner-msg{
+    font-size: 3rem;
+    text-align: center;
+  }
+  
 }

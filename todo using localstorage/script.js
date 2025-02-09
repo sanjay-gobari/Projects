@@ -157,12 +157,14 @@ function RefreshData() {
 function updateStatus() {
   if (update_Status) {
     status_box.innerHTML = `
-      <div class="py-1 px-2 bg-yellow-400 w-fit rounded-md">
-        Updating Task ${current_id + 1}
+      <div class="flex items-center gap-2">
+        <div class="py-1 px-2 bg-yellow-400 w-fit rounded-md">
+          Updating Task ${current_id + 1}
+        </div>
+        <button id="cancel-update" class="button-2 hvrt-p" title="Cancel update">
+          <i class="ri-close-line pointer-events-none"></i>
+        </button>
       </div>
-      <button id="cancel-update" class="button-2 hvrt-p" title="Cancel update">
-        <i class="ri-close-line pointer-events-none"></i>
-      </button>
     `;
     const cancelButton = document.querySelector("#cancel-update");
     cancelButton.addEventListener("click", () => {
@@ -202,16 +204,16 @@ function wlcm() {
   const cDay = d.getDay();
 
   if (cHour < 12) {
-    wlcm_msg.innerText = `Good Morning,Sam`;
+    wlcm_msg.innerText = `Good Morning,User`;
   }
   else if (cHour >= 12 && cHour < 17) {
-    wlcm_msg.innerText = `Good Afternoon,Sam`;
+    wlcm_msg.innerText = `Good Afternoon,User`;
   }
   else if (cHour >= 17 && cHour < 20) {
-    wlcm_msg.innerText = `Good Evening,Sam`;
+    wlcm_msg.innerText = `Good Evening,User`;
   }
   else if (cHour >= 20) {
-    wlcm_msg.innerText = `Enjoy the night ahead!,Sam`;
+    wlcm_msg.innerText = `Enjoy the night ahead!,User`;
   }
   today_date.innerText=`${day[cDay]},${d.toLocaleDateString()}`;
   

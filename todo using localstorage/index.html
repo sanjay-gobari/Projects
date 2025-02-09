@@ -18,19 +18,21 @@
       <div class="max-h-[65%] md:max-h-[70%] h-full ">
         <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-300">
           <div class="flex flex-col items-center md:items-start">
-            <h1 id="wlcm-msg" class="text-3xl font-bold md:font-semibold ">Good Morning,Sam</h1>
+            <h1 id="wlcm-msg" class="text-3xl font-bold md:font-semibold ">Good Morning,User</h1>
             <p id="today-date" class="text-2xl text-green-500">day,date</p>
             <p id="current-time" class="text-2xl">00:00:00</p>
           </div>
           <div class="flex gap-1 py-2">
             <input type="date" class="border rounded-lg px-2 py-1 hvr-s">
             <div class="flex gap-1">
-              <button class="button-1 hvr-p" title="view todo">View</button>
+              <button class="button-1 hvr-p" title="filter todo by date">
+                <i class="ri-filter-3-line"></i>
+              </button>
               <button id="save-todo" class="button-1 hvr-s " title="Save Todo">
                 <i class="ri-save-line"></i>
               </button>
               <button id="clear-todo" class="button-1 hvr-s " title="Clear All">
-                <i class="ri-file-reduce-line"></i>
+                <i class="ri-delete-bin-5-line"></i>
               </button>
             </div>
           </div>
@@ -40,12 +42,12 @@
 
         </div>
       </div>
-      <div>
-        <div id="status-box" class="pt-2 flex items-center gap-2 mb-2">
+      <div >
+        <div id="status-box" class="pt-2 flex items-center justify-end gap-8 mb-2 ">
         </div>
-        <form class="w-full rounded-full p-3 flex items-center gap-2 bg-[#222222] text-white">
+        <form class="w-full rounded-full p-3 flex items-center gap-2 border border-black bg-gray-200">
           <input id="new-task-input" class="w-full p-3 bg-transparent rounded-full outline-none" type="text"
-            placeholder="New Task" required>
+            placeholder="Add Task" required>
           <button type="submit" id="task-add">
             <i
               class="ri-add-large-line text-4xl rounded-full p-2 bg-gray-700 text-gray-300 hover:text-white hover:bg-gray-600"></i>
