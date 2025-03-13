@@ -139,6 +139,7 @@ choose_song_file.addEventListener('change', (e) => {
   // current_song_index=0;
   for (var i = 0; i < e.target.files.length; i++) {
     if (e.target.files[i].type.split('/')[0] == 'audio') {
+      console.log(e.target.files[i])
       add_song_to_list(e.target.files[i].name.split('.')[0])
     }
   }

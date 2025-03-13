@@ -4,16 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hi this is sanjay</title>
+  <title>sanjay singh</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <h1>My Projects</h1>
-  <main id="main">
-    
-  </main>
+  <div class="container1">
+    <nav class="navbar">
+      <div class="nav-list">
+      </div>
+      <div class="progress-bar"></div>
+    </nav>
+    <main class="main">
+      <section class="intro">
+        <div class="left-side">
+          <h1>Sanjay Singh</h1>
+          <div>
+            <p class="blink">A Frontend Developer</p>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="eye1">
+            <div class="pupil1"></div>
+          </div>
+          <div class="eye2">
+            <div class="pupil2"></div>
+          </div>
+        </div>
+      </section>
+      <section class="technology" id="technology">
+        <p class="heading2">Can work with</p>
+        <ul>
+          <li><img src="./static/img/html.svg" alt=""></li>
+          <li><img src="./static/img/css.svg" alt=""></li>
+          <li><img src="./static/img/javascript.svg" alt=""></li>
+          <li><img src="./static/img/tailwind.svg" alt=""></li>
+          <li><img src="./static/img/bootstrap.svg" alt=""></li>
+          <li><img src="./static/img/git.svg" alt=""></li>
+          <li><img src="./static/img/react.svg" alt=""></li>
+          <li><img src="./static/img/nodejs.svg" alt=""></li>
+          <li><img src="./static/img/mongodb.svg" alt=""></li>
+          <li><img src="./static/img/express.svg" alt=""></li>
+        </ul>
+      </section>
+      <section class="projects" id="projects">
+        <p class="heading2">My Projects</p>
+        <div id="my-project" class="project-grid">
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="aboutme">
+          <h2>About Me</h2>
+          <div class="aboutme-box">
+            <div class="left-side">
+              <div class="img-box skeleton"></div>
+            </div>
+            <div class="right-side">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, necessitatibus!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contacts" id="contact">
+          <h2>Contact Me</h2>
+          <form id="contact-me-form">
+            <label for="name">Name</label>
+            <input class="input-field" type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input class="input-field" type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea class="input-field" id="message" name="message" rows="5" required></textarea>
+
+            <button class="contact-button" type="submit">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z"
+                  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+  <script src="script_add_prj.js"></script>
 </body>
 
 </html>
