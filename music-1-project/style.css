@@ -647,7 +647,7 @@ left: var(--pointer-loc,50%);
   text-align: center;
   --trnaslate-y:calc(-100% - var(--tip-size));
   padding: 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.15rem;
   background-color: white;
 }
 .tool-tip-c::after{

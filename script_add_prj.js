@@ -44,7 +44,7 @@ createElm()
 function createElm() {
   let cards = data.map(elm => `
       <div class="project-card">
-      <a href="${elm.link}" class="view-project">
+      <a href="${elm.link}"  class="view-project">
             <div class="project-image">
               <img src="${elm.img}" alt="${elm.imgalt}">
             </div>

@@ -23,12 +23,6 @@ const nav_data = [
 
 makeNavList()
 
-const progressMax = window.innerWidth;
-const nav_gap = progressMax / (nav_data.length);
-
-let count = 0;
-window.addEventListener("scroll", updateProgress);
-
 function makeNavList() {
   nav_list.innerHTML = nav_data.map((item, i) => {
     if (i === 0) {
@@ -41,6 +35,12 @@ function makeNavList() {
     </a>`)
   }).join("")
 }
+
+const progressMax = window.innerWidth;
+const nav_gap = progressMax / (nav_data.length);
+let count = 0;
+window.addEventListener("scroll", updateProgress);
+
 // update progress bar
 function updateProgress() {
 
@@ -82,36 +82,6 @@ function reset_active_all() {
 
 
 
-// eye track
-
-const eye1 = document.querySelector('.eye1');
-const pupil1 = document.querySelector('.pupil1');
-const eye2 = document.querySelector('.eye2');
-const pupil2 = document.querySelector('.pupil2');
-
-const eyeRect1 = eye1.getBoundingClientRect();
-const eyeRect2 = eye2.getBoundingClientRect();
-
-document.addEventListener('mousemove', (event) => {
-  moveEye(event, eyeRect1, pupil1);
-  moveEye(event, eyeRect2, pupil2);
-});
-
-function moveEye(event, eyeRect, pupil) {
-  const eyeCenterX = eyeRect.left + eyeRect.width / 2;
-  const eyeCenterY = eyeRect.top + eyeRect.height / 2;
-
-  const deltaX = event.clientX - eyeCenterX;
-  const deltaY = event.clientY - eyeCenterY;
-
-  const distance = Math.min(20, Math.sqrt(deltaX * deltaX + deltaY * deltaY));
-  const angle = Math.atan2(deltaY, deltaX);
-
-  const pupilX = Math.cos(angle) * distance;
-  const pupilY = Math.sin(angle) * distance;
-
-  pupil.style.transform = `translate(${pupilX}px, ${pupilY}px)`;
-}
 
 
 

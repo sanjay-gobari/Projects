@@ -6,47 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sanjay singh</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="owl.css">
   <link rel="stylesheet" href="style.css">
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script defer src="owl.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="script_add_prj.js"></script>
+  <script defer src="script_nav.js"></script>
 </head>
 
 <body>
   <div class="container1">
-    <nav class="navbar">
-      <div class="nav-list">
+    <div id="nav-sentinel"></div>
+    <div class="progress-bar"></div>
+    <nav class=" navbar" id="navbar">
+      <h2 class="logo">LOGO</h2>
+      <div class="nav-list" id="nav-list-i">
       </div>
-      <div class="progress-bar"></div>
     </nav>
     <main class="main">
       <section class="intro">
         <div class="left-side">
           <h1>Sanjay Singh</h1>
-          <div>
-            <p class="blink">A Frontend Developer</p>
-          </div>
         </div>
         <div class="right-side">
-          <div class="eye1">
-            <div class="pupil1"></div>
-          </div>
-          <div class="eye2">
-            <div class="pupil2"></div>
-          </div>
+          <div class="owl"></div>
         </div>
       </section>
-      <section class="technology" id="technology">
-        <p class="heading2">Can work with</p>
-        <ul>
-          <li><img src="./static/img/html.svg" alt=""></li>
-          <li><img src="./static/img/css.svg" alt=""></li>
-          <li><img src="./static/img/javascript.svg" alt=""></li>
-          <li><img src="./static/img/tailwind.svg" alt=""></li>
-          <li><img src="./static/img/bootstrap.svg" alt=""></li>
-          <li><img src="./static/img/git.svg" alt=""></li>
-          <li><img src="./static/img/react.svg" alt=""></li>
-          <li><img src="./static/img/nodejs.svg" alt=""></li>
-          <li><img src="./static/img/mongodb.svg" alt=""></li>
-          <li><img src="./static/img/express.svg" alt=""></li>
-        </ul>
+      <section class="tech-box">
+        <section class="technology" id="technology">
+          <p class="heading2">Can work with</p>
+          <ul>
+            <li><img src="./static/img/html.svg" alt=""></li>
+            <li><img src="./static/img/css.svg" alt=""></li>
+            <li><img src="./static/img/javascript.svg" alt=""></li>
+            <li><img src="./static/img/react.svg" alt=""></li>
+            <li><img src="./static/img/nodejs.svg" alt=""></li>
+            <li><img src="./static/img/mongodb.svg" alt=""></li>
+            <li><img src="./static/img/express.svg" alt=""></li>
+          </ul>
+        </section>
+        <section class="technology" >
+          <p class="heading2">Dev Technology</p>
+          <ul>
+            <li><img src="./static/img/tailwind.svg" alt=""></li>
+            <li><img src="./static/img/bootstrap.svg" alt=""></li>
+            <li><img src="./static/img/git.svg" alt=""></li>
+          </ul>
+        </section>
       </section>
       <section class="projects" id="projects">
         <p class="heading2">My Projects</p>
@@ -62,7 +70,15 @@
               <div class="img-box skeleton"></div>
             </div>
             <div class="right-side">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, necessitatibus!</p>
+              <p>I'm a passionate Frontend Developer with a strong focus on crafting clean, responsive, and
+                user-friendly web interfaces. I specialize in turning complex problems into simple, elegant solutions
+                using modern web technologies like HTML, CSS, JavaScript, and React.<br />
+                With a sharp eye for design and performance, I build interactive UIs that not only look good but also
+                feel fast and intuitive. I enjoy bridging the gap between design and development, bringing ideas to life
+                in the browser.<br />
+                Whether it's developing single-page applications, optimizing performance, or ensuring cross-browser
+                compatibility, I take pride in writing code that's both efficient and maintainable. I'm always eager to
+                learn new tools and frameworks that push the boundaries of what the web can do.</p>
             </div>
           </div>
         </div>
@@ -72,14 +88,21 @@
         <div class="contacts" id="contact">
           <h2>Contact Me</h2>
           <form id="contact-me-form">
-            <label for="name">Name</label>
-            <input class="input-field" type="text" id="name" name="name" required>
+            <div id="form-user-details">
+              <div class="user-name">
+                <label for="name">Name</label>
+                <input class="input-field" type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="user-email">
+                <label for="email">Email</label>
+                <input class="input-field" type="email" id="email" name="email" placeholder="Example@gmail.com"
+                  required>
+              </div>
 
-            <label for="email">Email</label>
-            <input class="input-field" type="email" id="email" name="email" required>
-
+            </div>
             <label for="message">Message</label>
-            <textarea class="input-field" id="message" name="message" rows="5" required></textarea>
+            <textarea class="input-field" id="message" name="message" rows="8" placeholder="Message..."
+              required></textarea>
 
             <button class="contact-button" type="submit">
               <span>Send Message</span>
@@ -94,8 +117,8 @@
       </section>
     </main>
   </div>
-  <script src="script.js"></script>
-  <script src="script_add_prj.js"></script>
+  <footer>Copyright © 2025 | All rights reserved</footer>
+
 </body>
 
 </html>
