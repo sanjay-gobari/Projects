@@ -4,121 +4,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sanjay singh</title>
+  <title>Sanjay Singh</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="owl.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="Style2.css">
+  <link rel="stylesheet" href="carousel.css">
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-  <script defer src="owl.js"></script>
-  <script defer src="script.js"></script>
-  <script defer src="script_add_prj.js"></script>
-  <script defer src="script_nav.js"></script>
+  <script src="./Plasma.js" defer></script>
+  <script src="./Script.js" defer></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+  <script src="./usegsap.js" defer></script>
+  <script src="./Project_script.js" defer></script>
 </head>
 
 <body>
-  <div class="container1">
-    <div id="nav-sentinel"></div>
-    <div class="progress-bar"></div>
-    <nav class=" navbar" id="navbar">
-      <h2 class="logo">LOGO</h2>
-      <div class="nav-list" id="nav-list-i">
-      </div>
-    </nav>
-    <main class="main">
-      <section class="intro">
-        <div class="left-side">
-          <h1>Sanjay Singh</h1>
-        </div>
-        <div class="right-side">
-          <div class="owl"></div>
-        </div>
-      </section>
-      <section class="tech-box">
-        <section class="technology" id="technology">
-          <p class="heading2">Can work with</p>
-          <ul>
-            <li><img src="./static/img/html.svg" alt=""></li>
-            <li><img src="./static/img/css.svg" alt=""></li>
-            <li><img src="./static/img/javascript.svg" alt=""></li>
-            <li><img src="./static/img/react.svg" alt=""></li>
-            <li><img src="./static/img/nodejs.svg" alt=""></li>
-            <li><img src="./static/img/mongodb.svg" alt=""></li>
-            <li><img src="./static/img/express.svg" alt=""></li>
-          </ul>
-        </section>
-        <section class="technology" >
-          <p class="heading2">Dev Technology</p>
-          <ul>
-            <li><img src="./static/img/tailwind.svg" alt=""></li>
-            <li><img src="./static/img/bootstrap.svg" alt=""></li>
-            <li><img src="./static/img/git.svg" alt=""></li>
-          </ul>
-        </section>
-      </section>
-      <section class="projects" id="projects">
-        <p class="heading2">My Projects</p>
-        <div id="my-project" class="project-grid">
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <div class="aboutme">
-          <h2>About Me</h2>
-          <div class="aboutme-box">
-            <div class="left-side">
-              <div class="img-box skeleton"></div>
-            </div>
-            <div class="right-side">
-              <p>I'm a passionate Frontend Developer with a strong focus on crafting clean, responsive, and
-                user-friendly web interfaces. I specialize in turning complex problems into simple, elegant solutions
-                using modern web technologies like HTML, CSS, JavaScript, and React.<br />
-                With a sharp eye for design and performance, I build interactive UIs that not only look good but also
-                feel fast and intuitive. I enjoy bridging the gap between design and development, bringing ideas to life
-                in the browser.<br />
-                Whether it's developing single-page applications, optimizing performance, or ensuring cross-browser
-                compatibility, I take pride in writing code that's both efficient and maintainable. I'm always eager to
-                learn new tools and frameworks that push the boundaries of what the web can do.</p>
-            </div>
+  <main>
+    <section class="section-1" id="section1">
+      <nav class="navbar">
+        <div class="logo">logo</div>
+        <ul class="nav-links">
+          <li class="nav-link corner-target"><a href="#">Home</a></li>
+          <li class="nav-link corner-target"><a href="#about">About</a></li>
+          <li class="nav-link corner-target"><a href="#projects">Projects</a></li>
+          <li class="nav-link corner-target"><a href="#contact">Contact</a></li>
+      </nav>
+      <div class="hero-w">
+        <div class="hero">
+          <p class="hero-msg-1">I turn ideas into interactive<br> experiences that drive result.</p>
+          <div class="hero-image-w">
+            <img class="hero-image" src="" alt="">
+          </div>
+          <div class="hero-msg-w">
+            <p class="hero-dev-msg">Frontend Developer</p>
+            <p class="hero-msg-2">Available for freelance work</p>
           </div>
         </div>
-      </section>
-
-      <section class="contact">
-        <div class="contacts" id="contact">
-          <h2>Contact Me</h2>
-          <form id="contact-me-form">
-            <div id="form-user-details">
-              <div class="user-name">
-                <label for="name">Name</label>
-                <input class="input-field" type="text" id="name" name="name" placeholder="Your Name" required>
-              </div>
-              <div class="user-email">
-                <label for="email">Email</label>
-                <input class="input-field" type="email" id="email" name="email" placeholder="Example@gmail.com"
-                  required>
-              </div>
-
-            </div>
-            <label for="message">Message</label>
-            <textarea class="input-field" id="message" name="message" rows="8" placeholder="Message..."
-              required></textarea>
-
-            <button class="contact-button" type="submit">
-              <span>Send Message</span>
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z"
-                  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-          </form>
+        <div class="dev-name-w">
+          <h1>SANJAY SINGH</h1>
         </div>
-      </section>
-    </main>
-  </div>
-  <footer>Copyright © 2025 | All rights reserved</footer>
+      </div>
+    </section>
+    <section class="section-2" id="section2">
+      <h2 class="work-msg" id="work-msg">SELECTED WORK</h2>
+      <div class="project-w">
+        <div class="carousel">
+          <div class="cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </div>
+        <canvas id="plasmaCanvas"></canvas>
+      </div>
+      <a href="#projects" class="explore-w">
+        <button>
+          <p>EXPLORE MORE</p>
+          <i class="ri-external-link-line"></i>
+        </button>
 
+      </a>
+    </section>
+    <section class="section-3">
+      <h2 class="tools-heading" id="tools-heading">TOOLS & TECHNOLOGIES</h2>
+      <div class="tools-w">
+        <ul class="tools">
+          <li class="tool-item"><img src="static/html.svg" alt=""></li>
+          <li class="tool-item"><img src="static/css.svg" alt=""></li>
+          <li class="tool-item"><img src="static/javascript.svg" alt=""></li>
+          <li class="tool-item"><img src="static/tailwind.svg" alt=""></li>
+        </ul>
+        <ul class="tools">
+          <li class="tool-item"><img src="static/bootstrap.svg" alt=""></li>
+          <li class="tool-item"><img src="static/materialui.svg" alt=""></li>
+          <li class="tool-item"><img src="static/gsap.svg" alt=""></li>
+          <li class="tool-item"><img src="" alt=""></li>
+        </ul>
+        <ul class="tools">
+          <li class="tool-item"><img src="static/react.svg" alt=""></li>
+          <li class="tool-item"><img src="static/nextjs.svg" alt=""></li>
+          <li class="tool-item"><img src="static/redux.svg" alt=""></li>
+          <li class="tool-item"><img src="" alt=""></li>
+        </ul>
+        <ul class="tools">
+          <li class="tool-item"><img src="static/nodejs.svg" alt=""></li>
+          <li class="tool-item"><img src="static/express.svg" alt=""></li>
+          <li class="tool-item"><img src="" alt=""></li>
+          <li class="tool-item"><img src="" alt=""></li>
+        </ul>
+        <ul class="tools">
+          <li class="tool-item"><img src="static/mongodb.svg" alt=""></li>
+          <li class="tool-item"><img src="static/postgresql.svg" alt=""></li>
+          <li class="tool-item"><img src="static/firebase.svg" alt=""></li>
+          <li class="tool-item"><img src="static/appwrite.svg" alt=""></li>
+        </ul>
+        <ul class="tools">
+          <li class="tool-item"><img src="static/git.svg" alt=""></li>
+          <li class="tool-item"><img src="static/github.svg" alt=""></li>
+          <li class="tool-item"><img src="static/vscode.svg" alt=""></li>
+          <li class="tool-item"><img src="static/postman.svg" alt=""></li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="heading-3">My Projects</p>
+      <div>
+        <i class="ri-layout-4-line"></i>
+        <i class="ri-layout-horizontal-line"></i>
+      </div>
+      <div id="my-project" class="project-grid">
+      </div>
+    </section>
+    <section class="section-4" id="about">
+      <div class="about-w">
+        <div class="about-img-w">
+          <img src="" alt="">
+        </div>
+        <div class="about-text-w">
+          <div class="about-text-heading">
+            <h2 class="about-text-heading-1">FRONTEND</h2>
+            <h2 class="about-text-heading-2">DEVELOPER</h2>
+            <div class="text-mask ">
+              <p class="about-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
+                elit.</p>
+            </div>
+          </div>
+
+          <div class="about-me">
+            <h2>[ABOUT ME]</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati veniam nulla nostrum laborum
+              sit
+              blanditiis eius natus, maiores quos at deserunt esse totam quasi, quaerat itaque. Doloribus, molestiae
+              magni.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-5" id="contact">
+      <div class="work-msg-w">
+        <h2>LET'S WORK</h2>
+        <h2>TOGETHER</h2>
+      </div>
+      <div class="book-a-call-w">
+        <button>
+          BOOK A CALL
+        </button>
+      </div>
+      <div class="local-time-w">
+        <p class="time" id="time"> [ 10 : 10 AM ]</p>
+        <p class="time-dis">LOCAL TIME +5:30 GMT</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links-w">
+      <div class="footer-web-links">
+        <h4>MENU</h4>
+        <ul>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-social-links">
+        <h4>SOCIALS</h4>
+        <ul>
+          <li>Linkedin</li>
+          <li>Github</li>
+          <li>X</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-web-name">
+      <h3>SANJAY SINGH </h3>
+    </div>
+  </footer>
 </body>
 
 </html>

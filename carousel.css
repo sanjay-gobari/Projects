@@ -1,0 +1,66 @@
+    .carousel {
+
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+
+    .cards {
+      position: absolute;
+      height: 200px;
+      width: 160px;
+      top: 30%;
+
+      left: calc(50% - 80px);
+      transform-style: preserve-3d;
+      transform: perspective(1000px);
+      animation: spin 60s infinite linear;
+    }
+
+    .cards:hover {
+      animation-play-state: paused;
+    }
+
+    .card {
+      position: absolute;
+      border-radius: 0.25rem;
+      inset: 0 0 0 0;
+      background-color: rgb(100, 100, 100);
+    }
+
+    .card:nth-child(1) {
+      transform: translateZ(420px);
+    }
+
+    .card:nth-child(2) {
+      transform: rotateY(calc(360deg / 6 * 1)) translateZ(420px);
+    }
+
+    .card:nth-child(3) {
+      transform: rotateY(calc(360deg / 6 * 2)) translateZ(420px);
+    }
+
+    .card:nth-child(4) {
+      transform: rotateY(calc(360deg / 6 * 3)) translateZ(420px);
+    }
+
+    .card:nth-child(5) {
+      transform: rotateY(calc(360deg / 6 * 4)) translateZ(420px);
+    }
+
+    .card:nth-child(6) {
+      transform: rotateY(calc(360deg / 6 * 5)) translateZ(420px);
+    }
+
+
+    @keyframes spin {
+      from {
+        transform: perspective(1000px) rotateX(-15deg) rotateY(0deg);
+      }
+
+      to {
+        transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
+      }
+    }

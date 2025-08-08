@@ -1,0 +1,49 @@
+.corner-target {
+  position: relative;
+}
+
+.corner-target::before,
+.corner-target::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  transform: translate(-5px,-5px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Top-left */
+.corner-target::before {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.corner-target::after {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* On hover, show corners */
+.corner-target:hover::before,
+.corner-target:hover::after {
+  opacity: 1;
+}
+
+/* All four corners via extra elements */
+.corner-target::before {
+  background: 
+    linear-gradient(to right, rgb(255, 255, 255) 5px, transparent 0) top left,
+    linear-gradient(to bottom, rgb(255, 255, 255) 5px, transparent 0) top left,
+    linear-gradient(to left, rgb(255, 255, 255) 5px, transparent 0) top right,
+    linear-gradient(to bottom, rgb(255, 255, 255) 5px, transparent 0) top right,
+    linear-gradient(to right, rgb(255, 255, 255) 5px, transparent 0) bottom left,
+    linear-gradient(to top, rgb(255, 255, 255) 5px, transparent 0) bottom left,
+    linear-gradient(to left, rgb(255, 255, 255) 5px, transparent 0) bottom right,
+    linear-gradient(to top, rgb(255, 255, 255) 5px, transparent 0) bottom right;
+  background-repeat: no-repeat;
+  background-size: 10px 2px, 2px 10px;
+}
+
+.letter,.letter2 {
+  display: inline-block;}
