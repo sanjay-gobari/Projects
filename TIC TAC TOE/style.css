@@ -14,7 +14,7 @@
   display: grid;
   min-height: 100vh;
   place-content: center;
-  background-color: #706BCF;
+  background-color: #1f1f1f;
   /* Background color of cover*/
 }
 
@@ -26,7 +26,7 @@
   gap: 0.62rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
-  background-color: #333448;
+  background-color: #353535;
   transition: scale 0.2s ease;
 }
 
@@ -56,7 +56,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #2e2e41;
+  background-color: #161616;
   cursor: pointer;
   /* Cursor style on hover */
   transform-style: preserve-3d;
@@ -87,7 +87,7 @@
 
 /* Hover effect on grid cells */
 .tic-tac-toe-cell:hover {
-  background-color: #26273a;
+  background-color: #353535;
   /* Background color on hover */
 }
 
@@ -115,7 +115,7 @@
 .move-reset,
 .reset-btn,
 .play-again-btn {
-  background-color: #706BCF;
+  background-color: #2367fa;
   color: white;
 }
 
@@ -212,10 +212,11 @@
   font-size: 1.2rem;
   padding: 0.4em;
   border-radius: 0.2em;
+  border: 1px solid rgb(77, 77, 77);
 }
 
 .player-highlight {
-  background-color: #3f4058;
+  background-color: #5f5f5f;
 }
 .player-highlight  svg {
   color: #63a7ff;

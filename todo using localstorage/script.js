@@ -69,17 +69,17 @@ function updateList() {
   }
   const Cdata = TData.map((elm, i) => {
     return (`
-      <div id="li${i}" class="flex justify-between items-center border rounded-lg p-2 md:p-4 mb-2 mr-2 ${elm.taskStatus ? "border-green-400" : "border-red-400"}">
+      <div id="li${i}" class="flex flex-col md:flex-row justify-between items-center outline outline-2 outline-offset-2 bg-[#262626] rounded-lg gap-2 p-2 md:p-4 mb-4 mx-2 ${elm.taskStatus ? "outline-green-500/50" : "outline-red-500/50"}">
         <div class="flex items-center gap-2">
           <p>${i + 1}.</p>
           <input id="checkbox-${i}" type="checkbox" class="checkbox-1" ${elm.taskStatus ? "checked" : ""}>
           <p class="break-all">${elm.task}</p>
         </div>
-        <div class="flex items-end md:items-center flex-col md:flex-row gap-2">
-          <p class="text-gray-600">${elm.createdOn}</p>
+        <div class="flex items-center text-sm md:text-base gap-2">
+          <p class="text-gray-400">${elm.createdOn}</p>
           <div class="flex items-center gap-2">
-            <button id="edit-${i}" class="button-1 button-edit" ><i class="ri-edit-line pointer-events-none"></i></button>
-            <button id="delete-${i}" class="button-1 button-delete" ><i class="ri-delete-bin-line pointer-events-none"></i></button>
+            <button id="edit-${i}" class="button-1 button-edit" title="Edit" ><i class="ri-edit-line pointer-events-none"></i></button>
+            <button id="delete-${i}" class="button-1 button-delete" title="Delete"><i class="ri-close-large-line pointer-events-none"></i></button>
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@ function updateStatus() {
   if (update_Status) {
     status_box.innerHTML = `
       <div class="flex items-center gap-2">
-        <div class="py-1 px-2 bg-yellow-400 w-fit rounded-md">
+        <div class="py-1 px-2 bg-[#404040] outline outline-yellow-500/75 w-fit rounded-md">
           Updating Task ${current_id + 1}
         </div>
         <button id="cancel-update" class="button-2 hvrt-p" title="Cancel update">
@@ -174,7 +174,7 @@ function updateStatus() {
     });
   } else {
     status_box.innerHTML = `
-      <div class="py-1 px-2 bg-green-300 w-fit rounded-md">
+      <div class="py-1 px-2 bg-[#404040] outline outline-green-500/75 w-fit rounded-md">
         Adding task
       </div>
     `;
@@ -182,14 +182,14 @@ function updateStatus() {
   const elm = document.createElement("div")
 if(!save_status){
   elm.innerHTML=`
-  <div class="ml-4 py-1 px-2 bg-red-300 w-fit rounded-md">
+  <div class="ml-4 py-1 px-2 bg-[#404040] outline outline-red-500/75 w-fit rounded-md">
     Not Saved
   </div>`
   status_box.appendChild(elm)
 }
 else{
   elm.innerHTML=`
-  <div class="ml-4 py-1 px-2 bg-green-300 w-fit rounded-md">
+  <div class="ml-4 py-1 px-2 bg-[#404040] outline outline-green-500/75 w-fit rounded-md">
     Saved
   </div>`
   status_box.appendChild(elm)

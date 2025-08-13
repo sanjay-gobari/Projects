@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 :root{
   --theam-color1:rgb(68, 255, 68);
   --theam-color2:rgb(101, 168, 255);
@@ -8,8 +12,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+body{
+  background-color: #0A0A0A;
+}
+
 .hvr-p:hover{
   border-color: var(--theam-color1);
 }
@@ -21,16 +29,16 @@
   color:var(--theam-color1);
 }
 .button-1 {
-  border: 1px solid gray;
   padding: 0.3em 0.6em;
   border-radius: 0.4em;
+
 }
 
 .button-2 i{
   line-height: 0;
 }
 .button-2 {
-  border: 1px solid gray;
+  border: 1px solid rgb(201, 201, 201);
   display: grid;
   place-items: center;
   width: 1.5em;
@@ -66,4 +74,20 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #818181;
+}
+.box-out{
+  background-color: #171717;
+  color: white;
+    border: 1px solid rgb(54, 54, 54);
+    margin-block: 1rem;
+    height: calc(100dvh - 2rem);
+    border-radius: 1rem;
+}
+.date-input{
+  color: black;
+}
+
+.btn-3{
+  background-color: #232323;
+  border: 1px solid rgb(54, 54, 54);
 }
