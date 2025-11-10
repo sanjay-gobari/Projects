@@ -11,31 +11,31 @@ const data = [
     title: "Stopwatch",
     img: "./img/stopwatch.png",
     imgalt: "Stopwatch",
-    link: "./Stop_Watch/",
+    link: "./Stop Watch/",
   },
   {
     title: "TIC TAC TOE",
     img: "./img/TicTacToe.png",
-    imgalt: "project",
+    imgalt: "Tic Tac Toe",
     link: "./TIC TAC TOE/",
   },
   {
     title: "Urban Elegance",
     img: "./img/urban_elegance.png",
     imgalt: "Urban Elegance",
-    link: "./UrbanElegance/",
+    link: "./Urban Elegance/",
   },
   {
     title: "Music Player",
     img: "./img/music_player.png",
     imgalt: "Music Player",
-    link: "./music-1-project/",
+    link: "./Soniq/",
   },
   {
     title: "ToDo App",
     img: "./img/todo_app.png",
-    imgalt: "ToDo App",
-    link: "./todo using localstorage/",
+    imgalt: "Todo App",
+    link: "./Todo Local Storage/",
   },
 ]
 
